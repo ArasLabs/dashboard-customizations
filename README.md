@@ -90,7 +90,9 @@ For more information on contributing to this project, another Aras Labs project,
 
 ## Credits
 
-Created by Jillian Jakubowicz for Aras Labs. @JillJakubowicz
+Project updated and expanded by Jillian Jakubowicz for Aras Labs. @JillJakubowicz
+
+Original Aras Community Project by Aras Corporation Support: **Instructions to Change Font of a Dashboard**
 
 ## License
 
