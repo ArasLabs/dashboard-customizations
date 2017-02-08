@@ -1,0 +1,26 @@
+<AML>
+ <Item type="ItemType" id="1C5BA0A1491843378E48FF481F6F1DF1" action="edit">
+	<Relationships>
+		<Item type="Property" id="BC4143F554AC440C90415CCBAC494B87" action="add">
+			<column_alignment>left</column_alignment>
+			<data_source keyed_name="labs_ChartFillPattern">F60A44B0BB1B4C9CA8C9CFBEEA41A3CA</data_source>
+			<data_type>list</data_type>
+			<default_value xml:lang="en" />
+			<is_hidden>0</is_hidden>
+			<is_hidden2>0</is_hidden2>
+			<is_indexed>0</is_indexed>
+			<is_keyed>0</is_keyed>
+			<is_multi_valued>0</is_multi_valued>
+			<is_required>0</is_required>
+			<label xml:lang="en">Pattern</label>
+			<range_inclusive>0</range_inclusive>
+			<readonly>0</readonly>
+			<sort_order>2565</sort_order>
+			<source_id keyed_name="Metric" type="ItemType" name="Metric">1C5BA0A1491843378E48FF481F6F1DF1</source_id>
+			<stored_length>256</stored_length>
+			<track_history>0</track_history>
+			<name>pattern</name>
+	   </Item>
+	 </Relationships>
+ </Item>
+</AML>

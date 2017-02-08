@@ -1,0 +1,57 @@
+﻿<AML>
+ <Item type="Method" id="BEE17CF9F1C54D68AC5264CD4E1F2E5E" action="edit">
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[' Build Dashboard
+' Generic server method that takes the name of a dashboard item as a parameter and returns
+'  chart xml.  Called from dashboard.html.
+
+' Load the Dashboard query, getting only the necessary information
+Dim aml As String = _
+  "<Item type='Dashboard' action='get' select='background_style,width,height'>" & _
+  "  <name>" & Me.getProperty("DashboardName") & "</name>" & _
+  "  <Relationships>" & _
+  "    <Item type='Dashboard Chart' action='get' select='related_id,x,y'>" & _
+  "      <related_id>" & _
+  "        <Item type='Chart' action='get'>" & _
+  "          <Relationships>" & _
+  "            <Item type='Chart Series' action='get' select='related_id,sort_order,markers'>" & _
+  "              <related_id>" & _
+  "                <Item type='Metric' action='get' select='label,color,pattern,link,stylesheet,method'>" & _
+  "                  <Relationships>" & _
+  "                    <Item type='Metric Value' action='get' select='sort_order,value,color,link,label,calculate,query,source_id'/>" & _
+  "                  </Relationships>" & _
+  "                </Item>" & _
+  "              </related_id>" & _
+  "            </Item>" & _
+  "          </Relationships>" & _
+  "        </Item>" & _
+  "      </related_id>" & _
+  "    </Item>" & _
+  "  </Relationships>" & _
+  "</Item>"
+
+Dim innovator As Innovator = Me.getInnovator()
+Dim dashItem As Item = Me.newItem()
+dashItem.loadAML(aml)
+' Run the dashboard query
+dashItem = dashItem.apply()
+
+' Check for an error or for a lack of Metric Value items (see IR-003972)
+If (dashItem.isError() OrElse dashItem.dom.selectSingleNode("//Item[@type='Metric Value']") Is Nothing) Then
+ Return innovator.newError(dashItem.getErrorDetail())
+End If
+
+' Transform to the chart format
+Dim chart As Item = Me.newItem()
+chart.dom.LoadXml(dashItem.applyStylesheet(CCO.Server.MapPath("styles/aml2chart.xsl"),"URL"))
+
+' Check for errors in the chart dom
+If chart.dom.selectSingleNode("//palette") Is Nothing Then
+ Return innovator.newError("Error building chart setup information")
+Else
+ Return chart
+End If]]></method_code>
+  <method_type>VB</method_type>
+  <name>Build Dashboard</name>
+ </Item>
+</AML>

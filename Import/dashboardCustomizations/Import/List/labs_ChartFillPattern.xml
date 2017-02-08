@@ -1,0 +1,14 @@
+﻿<AML>
+ <Item type="List" id="F60A44B0BB1B4C9CA8C9CFBEEA41A3CA" action="add">
+  <description>Optional fill patterns for the bars in dashboard charts </description>
+  <name>labs_ChartFillPattern</name>
+  <Relationships>
+   <Item type="Value" id="983CE070FA2D45E89122F121726FCCB2" action="add">
+    <label xml:lang="en">Stripe</label>
+    <sort_order>10</sort_order>
+    <source_id keyed_name="labs_ChartFillPattern" type="List">F60A44B0BB1B4C9CA8C9CFBEEA41A3CA</source_id>
+    <value>Stripe</value>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>
