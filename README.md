@@ -39,7 +39,7 @@ If more options are created the XSL choose statement should be modified for both
 Lastly, the new pattern type should be added to the `labs_ChartFillPattern` list item so that the option appears in the pattern menu.
 
 In addition to customizing the appearance of bar charts, the CSS of a chart can also be further customized.
-In this particular example, the CSS has been enhanced to change both the appearance of the bars and makers in line charts when the elements are moused over (see [./Screenshots/Hover CSS Snippet.PNG](./Screenshots/Hover%20CSS%20Property.PNG)).
+In this particular example, the CSS has been enhanced to change both the appearance of the bars and makers in line charts when the elements are moused over (see [./Screenshots/Hover CSS Snippet.PNG](./Screenshots/Hover%20CSS%20Snippet.PNG)).
 
 ## Installation
 
