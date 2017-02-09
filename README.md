@@ -28,16 +28,16 @@ The import package does the following updates:
 	3. Updates the Build Dashboard method to query the pattern property from Metric items
 	4. Adds the new list item labs_ChartFillPattern used as the data source for the newly added Metric pattern property
 
-The code tree overlay modifies the ../Client/styles/svg_charts.xsl and ../Server/styles/aml2chart.xsl files in order to support the new pattern property added to the Metric item.
-A new striped pattern has been created in the defs section of the xsl file as an example (reference Fill Pattern Snippet.png in the Screenshots folder).
-Once the package has been installed successfully the option for both stacked bar and bar charts to have a striped pattern will be available using the pattern menu(reference Pattern Property Selection.png in the Screenshots folder).
+The code tree overlay modifies the `../Client/styles/svg_charts.xsl` and `../Server/styles/aml2chart.xsl` files in order to support the new pattern property added to the Metric item.
+A new striped pattern has been created in the `<defs>` section of the xsl file as an example (see [./Screenshots/Fill Pattern Snippet.PNG](./Screenshots/Fill%20Pattern%20Snippet.PNG)).
+Once the package has been installed successfully the option for both stacked bar and bar charts to have a striped pattern will be available using the pattern menu (see [./Screenshots/Pattern Property Selection.PNG](./Screenshots/Pattern%20Property%20Selection.PNG)).
 
-Additional pattern options can be created in the defs section of the svg_charts.xsl file.
-If more options are created the xsl choose statement should be modified for both the stacked bar and bar chart types (reference Select Pattern Snippet.png in the Screenshots folder).
-Lastly, the new pattern type should be added to the labs_ChartFillPattern list item so that the option appears in the pattern menu.
+Additional pattern options can be created in the `<defs>` section of the `svg_charts.xsl` file.
+If more options are created the xsl choose statement should be modified for both the stacked bar and bar chart types (see [./Screenshots/Select Pattern Snippet.PNG](./Screenshots/Select%20Pattern%20Snippet.PNG)).
+Lastly, the new pattern type should be added to the `labs_ChartFillPattern` list item so that the option appears in the pattern menu.
 
 In addition to customizing the appearance of bar charts, the css of a chart can also be further customized.
-In this particular example, the css has been enhanced to change both the appearance of the bars and makers in line charts when the elements are moused over (reference Hover CSS Snippet.png in the Screenshots folder).
+In this particular example, the css has been enhanced to change both the appearance of the bars and makers in line charts when the elements are moused over (see [./Screenshots/Hover CSS Snippet.PNG](./Screenshots/Hover%20CSS%20Property.PNG)).
 
 ## Installation
 
