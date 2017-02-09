@@ -1,7 +1,7 @@
 # Custom Dashboard Charts
 
-This project demonstrates how to futher customize dashboard charts in addition to adding custom font css to the chart labels.
-To add custom font css to a chart please follow the Change Font of Dashboard document in the docucments folder.
+This project demonstrates how to further customize dashboard charts in addition to adding custom font CSS to the chart labels.
+To add custom font CSS to a chart please follow the Change Font of Dashboard document in the documents folder.
 
 ## Project Details
 
@@ -23,21 +23,23 @@ Firefox 38 ESR
 This project contains two parts - an import package and a code tree overlay.
 
 The import package does the following updates:
-	1. Adds the new pattern property the Metric item
-	2. Adds the pattern field to the Metric form
-	3. Updates the Build Dashboard method to query the pattern property from Metric items
-	4. Adds the new list item labs_ChartFillPattern used as the data source for the newly added Metric pattern property
+
+1. Adds the new pattern property the Metric item
+2. Adds the pattern field to the Metric form
+3. Updates the Build Dashboard method to query the pattern property from Metric items
+4. Adds the new list item `labs_ChartFillPattern` used as the data source for the newly added Metric pattern property
 
 The code tree overlay modifies the `../Client/styles/svg_charts.xsl` and `../Server/styles/aml2chart.xsl` files in order to support the new pattern property added to the Metric item.
-A new striped pattern has been created in the `<defs>` section of the xsl file as an example (see [./Screenshots/Fill Pattern Snippet.PNG](./Screenshots/Fill%20Pattern%20Snippet.PNG)).
+A new striped pattern has been created in the `<defs>` section of the XSL file as an example (see [./Screenshots/Fill Pattern Snippet.PNG](./Screenshots/Fill%20Pattern%20Snippet.PNG)).
+
 Once the package has been installed successfully the option for both stacked bar and bar charts to have a striped pattern will be available using the pattern menu (see [./Screenshots/Pattern Property Selection.PNG](./Screenshots/Pattern%20Property%20Selection.PNG)).
 
 Additional pattern options can be created in the `<defs>` section of the `svg_charts.xsl` file.
-If more options are created the xsl choose statement should be modified for both the stacked bar and bar chart types (see [./Screenshots/Select Pattern Snippet.PNG](./Screenshots/Select%20Pattern%20Snippet.PNG)).
+If more options are created the XSL choose statement should be modified for both the stacked bar and bar chart types (see [./Screenshots/Select Pattern Snippet.PNG](./Screenshots/Select%20Pattern%20Snippet.PNG)).
 Lastly, the new pattern type should be added to the `labs_ChartFillPattern` list item so that the option appears in the pattern menu.
 
-In addition to customizing the appearance of bar charts, the css of a chart can also be further customized.
-In this particular example, the css has been enhanced to change both the appearance of the bars and makers in line charts when the elements are moused over (see [./Screenshots/Hover CSS Snippet.PNG](./Screenshots/Hover%20CSS%20Property.PNG)).
+In addition to customizing the appearance of bar charts, the CSS of a chart can also be further customized.
+In this particular example, the CSS has been enhanced to change both the appearance of the bars and makers in line charts when the elements are moused over (see [./Screenshots/Hover CSS Snippet.PNG](./Screenshots/Hover%20CSS%20Property.PNG)).
 
 ## Installation
 
