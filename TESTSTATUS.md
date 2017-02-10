@@ -5,6 +5,7 @@ Indicates the result of the latest testing. Projects are tested in the version t
 ### Key
   * :heavy_check_mark: - passed testing
   * :heavy_exclamation_mark: - minor issues in testing
+  * :bangbang: issues in testing
   * :x: - project not recommended for browser/version
   * :heavy_minus_sign: - unsupported browser
 
@@ -12,4 +13,4 @@ Indicates the result of the latest testing. Projects are tested in the version t
 
             | IE 11      | FF 38 ESR  | Chrome     
 ------------|------------|------------|------------
-Aras 11 SP9 |  | :heavy_check_mark: | 
+Aras 11 SP9 | :heavy_check_mark: | :heavy_check_mark: | :bangbang:
