@@ -76,9 +76,18 @@ You are now ready to login to Aras and check out how to customize the dashboard 
 ## Usage
 
 1. Log in to Aras as admin.
-2. Click **Dashboards > Engineering Efficiencies** in the table of contents (TOC). It should look something like this:
+2. Navigate to **Administration > Configuration > Dashboards** in the Table of Contents (TOC).
+3. Search for the Dashboard that contains the chart you'd like to modify and open the item for editing. (locked)
+4. In the Dashboard Chart tab, right click the chart you want to modify and select **View Chart**.
+5. Lock the Chart item when the form/tab appears.
+6. In the Chart Series tab, select the metric you want to modify and click the lock icon in the relationship grid toolbar to edit the settings directly from the Chart Series grid.
+7. Set any properties you want to update, like Color or Pattern.
+8. Once you've updated the Chart Series properties you can save, unlock, and close the Chart item.
+9. Save, unlock and close the Dashboard item.
+10. Navigate to **Dashboards** in the TOC and click the modified Dashboard to see the updated display.
 
 ![Customized Dashboard](./Screenshots/Dashboard%20Charts.PNG)
+*The standard Engineering Efficiency dashboard, after being customized - including custom colors, fonts, and fill patterns.*
 
 ## Contributing
 
