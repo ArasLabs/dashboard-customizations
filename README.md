@@ -3,18 +3,21 @@
 This project demonstrates how to further customize dashboard charts in addition to adding custom font CSS to the chart labels.
 To add custom font CSS to a chart please follow the Change Font of Dashboard document in the documents folder.
 
-## Project Details
+## History
 
-See [TESTSTATUS file](./TESTSTATUS.md) for latest testing information.
+**Package works in IE, Edge. [Has axis error in Firefox.](https://github.com/ArasLabs/dashboard-customizations/issues/1) DOES NOT WORK in Chrome.**
 
-#### Built Using:
-Aras 11.0 SP9
+Release | Notes
+--------|--------
+[v1.0.1](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.1) | Tested 11.0 SP12, SP15. Tested on Edge, ~~Firefox 60 ESR, Chrome.~~
+[v1.0.0](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.0) | First release. Tested on Internet Explorer 11, Firefox 38 ESR, Chrome. Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
 
-#### Versions Tested:
-Aras 11.0 SP9
+#### Supported Aras Versions
 
-#### Browsers Tested:
-Firefox 38 ESR
+Project | Aras
+--------|------
+[v1.0.1](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.1) | 10.0 SPx, 11.0 SP7+, 11.0 SP12+, 11.0 SP15
+[v1.0.0](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.0) | 10.0 SPx, 11.0 SP7; Old Community Board Migration
 
 > Though built and tested using Aras 11.0 SP9, this project should function in older releases of Aras 11.0.
 
