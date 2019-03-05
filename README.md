@@ -5,19 +5,19 @@ To add custom font CSS to a chart please follow the Change Font of Dashboard doc
 
 ## History
 
-**Package works in IE, Edge. [Has axis error in Firefox.](https://github.com/ArasLabs/dashboard-customizations/issues/1) DOES NOT WORK in Chrome.**
-
 Release | Notes
 --------|--------
-[v1.0.1](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.1) | Tested 11.0 SP12, SP15. Tested on Edge, ~~Firefox 60 ESR, Chrome.~~
-[v1.0.0](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.0) | First release. Tested on Internet Explorer 11, Firefox 38 ESR, Chrome. Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
+[v1.0.1](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.1) | Tested 11.0 SP12, SP15. Tested on Edge, IE, ~~Firefox 60 ESR, Chrome.~~ **Package works in IE, Edge. [Has axis error in Firefox (Issue).](https://github.com/ArasLabs/dashboard-customizations/issues/1) DOES NOT WORK in Chrome.**
+[v1.0.0](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.0) | First release. Tested on Internet Explorer 11, Firefox 38 ESR, Chrome. 
+
+> Though built and tested using Aras 11.0 SP9, this project should function in older releases of Aras 11.0 and Aras 10.0.
 
 #### Supported Aras Versions
 
 Project | Aras
 --------|------
-[v1.0.1](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.1) | 10.0 SPx, 11.0 SP7+, 11.0 SP12+, 11.0 SP15
-[v1.0.0](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.0) | 10.0 SPx, 11.0 SP7; Old Community Board Migration
+[v1.0.1](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.1) | 10.0 SPx, 11.0 SP9+, 11.0 SP12+, 11.0 SP15
+[v1.0.0](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.0) | 10.0 SPx, 11.0 SP9; Old Community Board Migration
 
 > Though built and tested using Aras 11.0 SP9, this project should function in older releases of Aras 11.0.
 
