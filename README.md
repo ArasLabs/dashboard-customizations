@@ -7,7 +7,7 @@ To add custom font CSS to a chart please follow the Change Font of Dashboard doc
 
 Release | Notes
 --------|--------
-[v1.0.1](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.1) | Tested 11.0 SP12, SP15. Tested on Edge, IE, ~~Firefox 60 ESR, Chrome.~~ **Package works in IE, Edge. [Has axis error in Firefox (Issue).](https://github.com/ArasLabs/dashboard-customizations/issues/1) DOES NOT WORK in Chrome.**
+[v1.0.1](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.1) | Tested 11.0 SP12, SP15. Package works in IE, Edge. [Has axis error in Firefox (Issue).](https://github.com/ArasLabs/dashboard-customizations/issues/1) Chrome not supported at this time.
 [v1.0.0](https://github.com/ArasLabs/dashboard-customizations/releases/tag/v1.0.0) | First release. Tested on Internet Explorer 11, Firefox 38 ESR, Chrome. 
 
 
